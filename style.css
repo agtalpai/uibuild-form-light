@@ -60,7 +60,7 @@ input[type="checkbox"]:checked::before {
 
 label {
     display: inline-block;
-    max-width:90%;
+    max-width:80%;
 }
 input[type="text"], textarea {
     display: block;
