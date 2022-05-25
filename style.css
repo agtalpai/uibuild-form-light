@@ -1,0 +1,132 @@
+/* general styling */
+
+body {
+    background: #f7e4d4;
+    font-family: 'EB Garamond', serif;
+    color: #467745;
+    font-weight: 400;
+}
+
+.wrap {
+    max-width: 520px;
+    margin: 0 auto;
+    /* with this padding, mobile and desktop views have one origin, and no need to calc */
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-top:130px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: 400;}
+
+
+/* forms */
+
+input, label, textarea {
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label a, label a:link, label a:visited, label a:hover, label a:active {
+    color: #467745;
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: super;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+}
+
+
+input[type=checkbox]:checked {
+    background: #467745
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2714";
+    color: #fff;
+    padding: 3px;
+}
+
+label {
+    display: inline-block;
+    max-width:90%;
+}
+input[type="text"], textarea {
+    display: block;
+    width:100%;
+    max-width:480px;
+    background: #fff;
+    padding:20px;
+    border: none;
+    border-radius: 0px;
+    margin-bottom:26px;
+}
+
+input[type="text"] {
+    height: 64px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    display: block;
+    font-size: 21px;
+    color: #f7e4d4;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #467745;
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 280px;
+    height: 80px;
+    border-radius: 80px;
+}
+
+/* placeholders and fixes */
+
+::placeholder {
+    color: #467745;
+}
+
+/* fix for IE 10-11 */
+:-ms-input-placeholder {
+    color: #467745;
+}
+
+/* fix for Edge */
+::-ms-input-placeholder {
+    color: #467745;
+}
+
+/* media queries */
+
+@media screen and (min-width:520px) {
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 48px;
+        font-weight: 400;
+    }
+
+    label {
+        display: inline-block;
+        max-width:100%;
+    }
+
+    input[type="checkbox"] {
+        vertical-align: top;
+    }
+    }
